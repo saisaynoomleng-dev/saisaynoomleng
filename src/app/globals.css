@@ -130,4 +130,20 @@
   --text-fs-400: 1rem;
   --text-fs-300: 0.875rem;
   --text-fs-200: 0.75rem;
+
+  /* breakpoints */
+  --breakpoint-lg: 1000px;
+  --breakpoint-md: 760px;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-brand-black text-brand-gray font-overpass overflow-x-hidden text-fs-400 leading-normal tracking-normal;
+  }
+  p {
+    @apply text-pretty;
+  }
 }
